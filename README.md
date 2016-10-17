@@ -3,11 +3,10 @@ CICacheService with memcache
 
 support with ci 3.x
 
-first you should add a model 
+first you should add a model File
 
 For example:
 
-<?php
 class Users_model extends CI_Model {
 
 	public $primary_key = "id";  //important
@@ -18,7 +17,6 @@ class Users_model extends CI_Model {
     }
 
 }
-?>
 
 Use it
 
