@@ -7,7 +7,6 @@ first you should add a model File
 
 For example:
 
-<pre/>
 class Users_model extends CI_Model 
 {
 
@@ -20,17 +19,20 @@ class Users_model extends CI_Model
 
 }
 
-Use it
+//second
+$this->load->library('CICacheService', 'CS');
 
-Del cache
+//Use it
+
+//Del cache
 $this->CS->delCacheById("Users", 4, true);
 
-Get cache
+//Get cache
 $user = $this->CS->getCacheById("Users", 5);
 
 print_r($user);
 
-Get list by Cache with id list
+//Get list by Cache with id list
 $userlist = $this->CS->getCacheByList("Users", array(5,6,8));
 
 print_r($userlist);
